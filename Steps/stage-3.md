@@ -21,7 +21,7 @@ Click `Create State Machine`
 Select `Write your workflow in code` which will allow you to use Amazon States Language  
 Scroll down
 for `type` select `standard`  
-Open [this](https://github.com/profebass99/serverless/blob/main/SEVERLESS_F_END/ASL.json) in a new tab 
+Open this [link](https://github.com/profebass99/serverless/blob/main/SEVERLESS_F_END/ASL.json) in a new tab 
 this is the Amazon States Language (ASL) file for the `Reminder` state machine  
 Copy the contents into your clipboard   
 Move back to the step functions console   

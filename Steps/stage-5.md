@@ -57,8 +57,8 @@ Under `Bucket Website Endpoint` copy and note down the bucket endpoint URL.
 
 # STAGE 5D - DOWNLOAD AND EDIT THE FRONT END FILES
 
-Download and extra this ZIP file https://learn-cantrill-labs.s3.amazonaws.com/aws-serverless-pet-cuddle-o-tron/serverless_frontend.zip
-Inside the serverless_frontend folder are the front end files for the serverless website :-
+click on this link and download some extra files  https://github.com/profebass99/serverless/tree/main/SEVERLESS_F_END
+Inside the serverless_f_end folder are some of the front end files for the serverless website  # Named :
 
 - index.html .. the main index page
 - main.css .. the stylesheet for the page

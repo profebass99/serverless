@@ -1,4 +1,4 @@
-# serverless# Serverless App --Reminder
+# Serverless App --Reminder
 
 you are going to implement a simple serverless application using S3, API Gateway, Lambda, Step Functions, SNS & SES.  
 

@@ -34,24 +34,6 @@ You need to locate the `YOUR_STATEMACHINE_ARN` placeholder and replace this with
 Click `Deploy` to save the lambda function and configuration.     
 
 
-# STAGE 4C - CONFIGURE THE LAMBDA FUNCTION (Using the preview/NEW UI)
-
-Under `Aliases` click `Latest` 
-Click the `Code` Tab  
-Open this link in a new tab https://github.com/profebass99/serverless/blob/main/SEVERLESS_F_END/api_lambda.py
-depending on your browser it might download the .py file, if so, open it in either your code editor, or notepad on windows, or textedit on a mac and copy it all into your clipboard
-Move back to the Lambda console.  
-Select the existing lambda code and delete it.  
-Paste the code into the lambda fuction.  
-This is the function which will provide compute to API Gateway.  
-It's job is to be called by API Gateway when its used by the serverless front end part of the application (loaded by S3)
-It accepts some information from you, via API Gateway and then it starts a state machine execution - which is the logic of the application.  
-
-You need to locate the `YOUR_STATEMACHINE_ARN` placeholder and replace this with the State Machine ARN you noted down in the previous step.  
-
-Click `Deploy as latest`  
-
-
 # STAGE 4D - CREATE API
 
 Now we have the api_lambda function created, the next step is to create the API Gateway, API and Method which the front end part of the serverless application will communicate with.  

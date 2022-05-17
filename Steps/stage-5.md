@@ -33,7 +33,7 @@ in the box, paste the code below
         "Effect":"Allow",
         "Principal": "*",
         "Action":["s3:GetObject"],
-        "Resource":["REPLACEME_PET_CUDDLE_O_TRON_BUCKET_ARN/*"]
+        "Resource":["REPLACEME_WIHT_YOUR_BUCKET_ARN/*"]
       }
     ]
   }
@@ -67,7 +67,7 @@ Inside the serverless_f_end folder are some of the front end files for the serve
 
 Open the `serverless.js` in a code/text editor.
 Locate the placeholder `REPLACEME_API_GATEWAY_INVOKE_URL` . replace it with your API Gateway Invoke URL
-at the end of this URL.. add `/petcuddleotron`
+at the end of this URL.. add `/Reminder`
 it should look something like this `https://somethingsomething.execute-api.us-east-1.amazonaws.com/prod/Reminder` 
 Save the file.  
 
@@ -84,14 +84,14 @@ Click `Exit`
 Verify All 4 files are in the `Objects` area of the bucket.  
 
 
-Open the `PetCuddleOTron URL` you just noted down in a new tab.  
+Open the `Reminder URL` you just noted down in a new tab.  
 What you are seeing is a simple HTML web page created by the HTML file itself and the `main.css` stylesheet.
 When you click buttons .. that calls the `.js` file which is the starting point for the serverless application
 
 Ok to test the application
 Enter an amount of time until the next cuddle ...I suggest `120` seconds
-Enter a message, i suggest `HUMAN COME HOME NOW`  
-then enter the `PetCuddleOTron Customer Address` in the email box, this is the email which you verified right at the start as the customer for this application.  
+Enter a message,  `anymessage`  
+then enter the `Reminder Customer Address` in the email box, this is the email which you verified right at the start as the customer for this application.  
 then enter your cell/mobile number in full international format in the next box
 
 **before you do the next step and click the button on the application, if you want to see how the application works do the following**

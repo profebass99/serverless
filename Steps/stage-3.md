@@ -1,7 +1,7 @@
  STAGE 3A - CREATE STATE MACHINE ROLE
 In this stage of the demo you need to create an IAM role which the state machine will use to interact with other AWS services.  
 You could create this manually, but its easier to do this step using cloudformation to speed things up.  
-Click https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/quickcreate?templateURL=https://learn-cantrill-labs.s3.amazonaws.com/aws-serverless-pet-cuddle-o-tron/statemachinerole.yaml&stackName=StateMachineRole 
+Click[statemachineRole]()
 Check the `I acknowledge that AWS CloudFormation might create IAM resources.` box and then click `Create Stack`  
 
 Wait for the Stack to move into the `CREATE_COMPLETE` state before moving into the next 
@@ -20,8 +20,8 @@ Click `Create State Machine`
 Select `Write your workflow in code` which will allow you to use Amazon States Language  
 Scroll down
 for `type` select `standard`  
-Open this in a new tab https://learn-cantrill-labs.s3.amazonaws.com/aws-serverless-pet-cuddle-o-tron/pet-cuddle-o-tron.json  
-this is the Amazon States Language (ASL) file for the `pet-cuddle-o-tron` state machine  
+Open [this]() in a new tab 
+this is the Amazon States Language (ASL) file for the `Reminder` state machine  
 Copy the contents into your clipboard   
 Move back to the step functions console   
 Select all of the code snippet and delete it  
@@ -46,7 +46,7 @@ Next, locate the `ParallelEmail` definition.
 Look for the `EMAIL_LAMBDA_ARN` which is a placeholder, replace this with the email_reminder_lambda ARN you noted down in the previous step. This is the ARN of the lambda function you created.  
 
 Scroll down to the bottom and click `next` 
-For `State machine name` use `PetCuddleOTron`  
+For `State machine name` use `Reminder`  
 Scroll down and under `Permissions` select `Choose an existing role` and select `StateMachineRole` from the dropdown (it should be the only one, if you have multiple select the correct one and there will be random which is fine as this was created by CloudFormation)
 Scroll down, under `Logging`, change the `Log Level` to `All`  
 Scroll down to the bottom and click `Create state machine`  

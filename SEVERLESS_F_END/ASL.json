@@ -1,5 +1,5 @@
 {
-  "Comment": "Pet Cuddle-o-Tron - using native SNS SMS and Lambda for email.",
+  "Comment": "Reminder - using native SNS SMS and Lambda for email.",
   "StartAt": "Timer",
   "States": {
     "Timer": {

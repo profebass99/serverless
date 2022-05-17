@@ -62,13 +62,13 @@ Inside the serverless_frontend folder are the front end files for the serverless
 
 - index.html .. the main index page
 - main.css .. the stylesheet for the page
-- whiskers.png .. an image of whiskers !!
+- Reminder.png .. an image of Reminder !!
 - serverless.js .. the JS code which runs in your browser. It responds when buttons are clicked, and passes and text from the boxes when it calls the API Gateway endpoint.  
 
 Open the `serverless.js` in a code/text editor.
 Locate the placeholder `REPLACEME_API_GATEWAY_INVOKE_URL` . replace it with your API Gateway Invoke URL
 at the end of this URL.. add `/petcuddleotron`
-it should look something like this `https://somethingsomething.execute-api.us-east-1.amazonaws.com/prod/petcuddleotron` 
+it should look something like this `https://somethingsomething.execute-api.us-east-1.amazonaws.com/prod/Reminder` 
 Save the file.  
 
 # STAGE 5E - UPLOAD AND TEST
@@ -96,7 +96,7 @@ then enter your cell/mobile number in full international format in the next box
 
 **before you do the next step and click the button on the application, if you want to see how the application works do the following**
 open a new tab to the `Step functions console` https://console.aws.amazon.com/states/home?region=us-east-1#/statemachines  
-Click on `PetCuddleOTron`  
+Click on `Reminder`  
 Click on the `Logging` tab, you will see no logs
 CLick on the `Executions` tab, you will see no executions..
 
@@ -120,7 +120,7 @@ Keep waiting, and after 120 seconds the visual will update showing the flow thro
 Scroll to the top, click `ExeuctionInput` and you can see the information entered on the webpage.
 This was send it, via the `JS` running in browser, to the API gateway, to the `api_lambda` then through to the `statemachine`
 
-Click `PetCuddleOTron` at the top of the page  
+Click `Reminder` at the top of the page  
 Click on the `Logging` Tab  
 Because the roles you created had `CWLogs` permissions the state machine is able to log to CWLogs
 Review the logs and ensure you are happy with the flow.  
@@ -138,7 +138,7 @@ At this point thats everything .. you now have a fully functional serverless app
 
 No servers were harmed, or used even, in this production :)
 
-Thats everything for this advanced demo, in STAGE6 you will clear up all of the services used for this advanced demo.  
+Thats everything for this Mini Advanced Design, in STAGE6 you will clear up all of the services used 
 
 
  

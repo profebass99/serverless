@@ -5,7 +5,7 @@
 
 import boto3, json, os, decimal
 
-SM_ARN = 'arn:aws:states:us-east-1:171040096730:stateMachine:PetCuddleOTron
+SM_ARN = 'arn:aws:states:us-east-1:171040096730:stateMachine:Reminder
 '
 
 sm = boto3.client('stepfunctions')

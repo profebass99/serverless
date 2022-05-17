@@ -1,7 +1,7 @@
  STAGE 3A - CREATE STATE MACHINE ROLE
 In this stage of the demo you need to create an IAM role which the state machine will use to interact with other AWS services.  
 You could create this manually, but its easier to do this step using cloudformation to speed things up.  
-Click[statemachineRole]()
+Click  [statemachineRole]() to create the statemachineRole
 Check the `I acknowledge that AWS CloudFormation might create IAM resources.` box and then click `Create Stack`  
 
 Wait for the Stack to move into the `CREATE_COMPLETE` state before moving into the next 
@@ -20,7 +20,7 @@ Click `Create State Machine`
 Select `Write your workflow in code` which will allow you to use Amazon States Language  
 Scroll down
 for `type` select `standard`  
-Open [this]() in a new tab 
+Open [this](https://github.com/profebass99/serverless/blob/main/SEVERLESS_F_END/ASL.json) in a new tab 
 this is the Amazon States Language (ASL) file for the `Reminder` state machine  
 Copy the contents into your clipboard   
 Move back to the step functions console   

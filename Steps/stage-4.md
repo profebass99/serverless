@@ -20,7 +20,7 @@ This is the lambda function which will support the API Gateway
 # STAGE 4B - CONFIGURE THE LAMBDA FUNCTION (Using the current UI)
 
 Scroll down, and remove all the code from the `lambda_function` text box  
-Open this link in a new tab https://learn-cantrill-labs.s3.amazonaws.com/aws-serverless-pet-cuddle-o-tron/api_lambda.py
+Open this link in a new tab https://github.com/profebass99/serverless/blob/main/SEVERLESS_F_END/api_lambda.py
 depending on your browser it might download the .py file, if so, open it in either your code editor, or notepad on windows, or textedit on a mac and copy it all into your clipboard
 Move back to the Lambda console.  
 Select the existing lambda code and delete it.  
@@ -38,7 +38,7 @@ Click `Deploy` to save the lambda function and configuration.
 
 Under `Aliases` click `Latest` 
 Click the `Code` Tab  
-Open this link in a new tab https://learn-cantrill-labs.s3.amazonaws.com/aws-serverless-pet-cuddle-o-tron/api_lambda.py
+Open this link in a new tab https://github.com/profebass99/serverless/blob/main/SEVERLESS_F_END/api_lambda.py
 depending on your browser it might download the .py file, if so, open it in either your code editor, or notepad on windows, or textedit on a mac and copy it all into your clipboard
 Move back to the Lambda console.  
 Select the existing lambda code and delete it.  
@@ -61,14 +61,14 @@ Locate the `REST API` box, and click `Build` (being careful not to click the bui
 If you see a popup dialog `Create your first API` dismiss it by clicking `OK`  
 Under `Create new API` ensure `New API` is selected.  
 
-For `API name*` enter `petcuddleotron`  
+For `API name*` enter `Reminder`  
 for `Endpoint Type` pick `Regional` 
 Click `create API`  
 
 # STAGE 4E - CREATE RESOURCE
 
 Click the `Actions` dropdown and Click `Create Resource`  
-Under resource name enter `petcuddleotron`  
+Under resource name enter `Reminder`  
 make sure that `Configure as proxy resource` is **NOT** ticked - this forwards everything as is, through to a lambda function, because we want some control, we **DONT** want this ticked.  
 Towards the bottom **MAKE SURE TO TICK** `Enable API Gateway CORS`.  
 This relaxes the restrictions on things calling on our API with a different DNS name, it allows the code loaded from the S3 bucket to call the API gateway endpoint.  
@@ -77,8 +77,8 @@ Click `Create Resource`
 
 # STAGE 4F - CREATE METHOD
 
-Ensure you have the `/petcuddleotron` resource selected, click `Actions` dropdown and click `create method`  
-In the small dropdown box which appears below `/petcuddleotron` select `POST` and click the `tick` symbol next to it.  
+Ensure you have the `/Reminder` resource selected, click `Actions` dropdown and click `create method`  
+In the small dropdown box which appears below `/Reminder` select `POST` and click the `tick` symbol next to it.  
 this method is what the front end part of the application will make calls to.  
 Its what the api_lambda will provide services for.  
 

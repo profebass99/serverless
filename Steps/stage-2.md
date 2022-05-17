@@ -55,7 +55,7 @@ This function will send an email to an address it's supplied with (by step funct
 Select `REPLACE_ME` and replace with the `PetCuddleOTron Sending Address` which you noted down in `STAGE1`    
 Click `Deploy` to configure the lambda function    
 Scroll all the way to the top, and click the `copy` icon next to the lambda function ARN.  
-Note this ARN down somewhere same as the `email_reminder_lambda` ARN    
+Note this ARN down somewhere same as the `email_reminder_lambda` ARN  .  
 
 # STAGE 2 - FINISH   
 

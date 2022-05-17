@@ -5,7 +5,7 @@ The application will load from an S3 bucket and run in browser
 
 .. communicating with Lambda and Step functions via an API Gateway Endpoint
 
-Using the application you will be able to configure reminders for 'tYou and others' to be send using email and SMS.
+Using the application you will be able to configure reminders for 'You and others' to be send using email and SMS.
 
 
 

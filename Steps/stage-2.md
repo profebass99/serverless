@@ -43,7 +43,7 @@ def lambda_handler(event, context):
     # Publish message directly to email, provided by EmailOnly or EmailPar TASK
     ses.send_email( Source=FROM_EMAIL_ADDRESS,
         Destination={ 'ToAddresses': [ event['Input']['email'] ] }, 
-        Message={ 'Subject': {'Data': 'Whiskers Commands You to attend!'},
+        Message={ 'Subject': {'Data': 'Texting to Remind You!'},
             'Body': {'Text': {'Data': event['Input']['message']}}
         }
     )

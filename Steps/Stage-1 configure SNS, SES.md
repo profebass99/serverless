@@ -14,7 +14,7 @@ This advanced demo consists of 6 stages :-
 
 # STAGE 1A - VERIFY SES APPLICATION SENDING EMAIL ADDRESS
 
-The Pet-Cuddle-O-Tron application is going to send reminder messages via SMS and Email.  It will use the simple email service or SES. In production, it could be configured to allow sending from the application email, to any users of the application. SES starts off in sandbox mode, which means you can only sent to verified addresses (to avoid you spamming). 
+The Reminder application is going to send reminder messages via SMS and Email.  It will use the simple email service or SES. In production, it could be configured to allow sending from the application email, to any users of the application. SES starts off in sandbox mode, which means you can only sent to verified addresses (to avoid you spamming). 
 
 There is a whole [process to get SES out of sandbox mode](https://docs.aws.amazon.com/ses/latest/DeveloperGuide/request-production-access.html), which you could do, but for this demo to keep things quick - we will verify the sender address and the receiver address.  
 

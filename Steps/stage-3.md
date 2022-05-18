@@ -1,7 +1,7 @@
  STAGE 3A - CREATE STATE MACHINE ROLE
 In this stage of the demo you need to create an IAM role which the state machine will use to interact with other AWS services.  
 You could create this manually, but its easier to do this step using cloudformation to speed things up.  
-Click  [statemachineRole]() to create the statemachineRole.
+Click  [statemachineRole](https://us-east-1.console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/quickcreate?templateUrl=https%3A%2F%2Faws-wordpress-evolution.s3.amazonaws.com%2Fstatemachine.yml&stackName=statemachine) to create the statemachineRole.
 
 Check the `I acknowledge that AWS CloudFormation might create IAM resources.` box and then click `Create Stack`  
 
